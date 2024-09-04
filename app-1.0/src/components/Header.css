@@ -1,17 +1,38 @@
 .header {
-    background-color: #f8f8f8;
-    padding: 20px 0;
+    background-color: #ffffff; /* Mantenemos el color de fondo claro */
+    padding: 10px 0; /* Reducimos un poco el padding para un look más compacto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+.header nav {
+    width: 90%; /* Limita el ancho del nav para un diseño más centrado */
+    margin: 0 auto; /* Centra el nav horizontalmente */
 }
 
 .header nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0; /* Asegura que no hay margen extra */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Distribuye los elementos uniformemente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+.header nav ul li {
+    padding: 0 10px; /* Añade padding horizontal para espaciar los elementos */
 }
 
 .header nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    font-size: 16px; /* Aumenta el tamaño de la fuente para mejorar la legibilidad */
+    padding: 10px 20px; /* Añade padding para hacer los enlaces más clicables */
+    border-radius: 5px; /* Bordes redondeados para un look más moderno */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para efectos hover */
+}
+
+.header nav ul li a:hover {
+    background-color: #ddd; /* Color de fondo al hacer hover */
+    color: #000; /* Cambio de color de texto al hacer hover */
 }

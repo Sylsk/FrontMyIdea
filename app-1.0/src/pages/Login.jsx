@@ -4,11 +4,17 @@ import './Login.css';
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [rememberMe, setRememberMe] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         // Aquí iría la lógica de autenticación
-        console.log('Login attempt', { email, password });
+        console.log('Login attempt', { email, password, rememberMe });
+    };
+
+    const handleForgotPassword = () => {
+        // Aquí iría la lógica para manejar el "Olvidé mi contraseña"
+        console.log('Forgot password');
     };
 
     return (
@@ -35,8 +41,21 @@ function Login() {
                         required
                     />
                 </div>
+                <div>
+                    <label>
+                        <input
+                            type="checkbox"
+                            checked={rememberMe}
+                            onChange={(e) => setRememberMe(e.target.checked)}
+                        />
+                        Recordar sesión
+                    </label>
+                </div>
                 <button type="submit">Login</button>
             </form>
+            <div className="forgot-password">
+                <button onClick={handleForgotPassword}>¿Olvidaste tu contraseña?</button>
+            </div>
         </div>
     );
 }

@@ -1,5 +1,6 @@
 .courses {
-    padding: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro para toda la sección */
 }
 
 .course-list {
@@ -10,10 +11,32 @@
 
 .course-item {
     border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff; /* Fondo blanco para cada tarjeta */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.course-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
 }
 
 .course-item h3 {
+    color: #333; /* Color oscuro para el título */
     margin-top: 0;
+    margin-bottom: 10px; /* Espacio después del título */
+}
+
+.course-item p {
+    margin-bottom: 10px; /* Espacio uniforme para todos los párrafos */
+    color: #666; /* Color gris oscuro para texto */
+    font-size: 14px; /* Tamaño de fuente para los párrafos */
+}
+
+.rating {
+    color: gold; /* Color dorado para las estrellas */
+    font-size: 16px; /* Tamaño de la fuente para las estrellas */
+    margin-bottom: 10px; /* Espacio después de la calificación */
 }
