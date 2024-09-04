@@ -1,0 +1,17 @@
+.header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
