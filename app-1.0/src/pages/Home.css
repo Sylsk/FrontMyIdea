@@ -1,14 +1,53 @@
 .home {
     text-align: center;
-    padding: 50px 0;
-}
-
-.home h1 {
-    font-size: 2.5em;
+    padding: 20px;
     color: #333;
+    background-color: #f0f0f0; /* Color de fondo suave */
 }
 
-.home p {
-    font-size: 1.2em;
-    color: #666;
+h1 {
+    color: #0056b3; /* Un azul fuerte para el título principal */
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px 0;
+}
+
+.course-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 250px; /* Ancho fijo para cada tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-item:hover {
+    transform: translateY(-5px); /* Efecto al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+    font-weight: bold;
+    color: #e63946; /* Color para el precio */
+}
+
+.details-link {
+    display: inline-block;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.details-link:hover {
+    background-color: #023e8a; /* Oscurecimiento al pasar el ratón */
 }
