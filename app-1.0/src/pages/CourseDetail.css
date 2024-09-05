@@ -1,11 +1,39 @@
 .course-detail {
     padding: 20px;
+    background-color: #f8f8f8; /* Fondo claro para resaltar el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    font-family: 'Arial', sans-serif; /* Fuente moderna y legible */
+    color: #333; /* Color de texto oscuro para mejor contraste */
+}
+
+.course-detail h2 {
+    color: #0056b3; /* Color destacado para el título */
+    margin-bottom: 10px; /* Espaciado bajo el título */
+}
+
+.course-detail p {
+    line-height: 1.6; /* Espaciado de línea para mejorar la legibilidad */
+    margin-bottom: 10px; /* Espaciado uniforme entre los párrafos */
 }
 
 .course-detail button {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Color verde vibrante */
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente grande para fácil lectura */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.course-detail button:hover {
+    background-color: #45a049; /* Un verde más oscuro para el efecto hover */
+}
+
+.course-detail .rating-stars {
+    color: #FFD700; /* Amarillo para las estrellas */
+    font-size: 18px; /* Tamaño adecuado para las estrellas */
+    letter-spacing: 3px; /* Espaciado entre estrellas */
 }

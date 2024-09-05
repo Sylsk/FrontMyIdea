@@ -11,16 +11,18 @@ function Courses() {
                 {courses.map(course => (
                     <div key={course.id} className="course-item">
                         <h3>{course.title}</h3>
-                        <p>Price: ${course.price}</p>
+                        <p>Price: ${course.price.toFixed(2)}</p>  
                         <p>Duration: {course.duration}</p>
                         <p>Level: {course.level}</p>
-                        <p>Rating: <div className="rating">
-                             {'★'.repeat(Math.floor(course.rating)) + (course.rating % 1 ? '' : '')}
+                        <p>Rating: 
+                            <span className="rating-stars">
+                                {'★'.repeat(Math.floor(course.rating))}{'☆'.repeat(5 - Math.floor(course.rating))}
+                            </span>
                             ({course.rating.toFixed(1)})
-                        </div>
                         </p>
                         <p>{course.description}</p>
-                        <Link to={`/courses/${course.id}`}>View Details</Link>
+                        {/* Asegúrate de que la clase details-link esté aplicada aquí */}
+                        <Link to={`/courses/${course.id}`} className="details-link">View Details</Link>
                     </div>
                 ))}
             </div>
