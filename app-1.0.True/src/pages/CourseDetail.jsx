@@ -14,16 +14,18 @@ function CourseDetail() {
     return (
         <div className="course-detail">
             <h2>{course.title}</h2>
+            <p>{course.type}</p>
             <p>{course.longDescription}</p>
             <p>Price: ${course.price.toFixed(2)}</p>
             <p>Duration: {course.duration}</p>
             <p>Level: {course.level}</p>
-            <p>Rating: 
-                 <span className="rating-stars">
-                {'★'.repeat(Math.floor(course.rating))}{'☆'.repeat(5 - Math.floor(course.rating))}
-                 </span>
+            <p>Rating:
+                <span className="rating-stars">
+                    {'★'.repeat(Math.floor(course.rating))}{'☆'.repeat(5 - Math.floor(course.rating))}
+                </span>
                 ({course.rating.toFixed(1)})
-                </p>
+            </p>
+
 
             <button>Add to Cart</button>
         </div>

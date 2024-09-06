@@ -2,18 +2,21 @@
     text-align: center;
     padding: 20px;
     color: #333;
-    background-color: #f0f0f0; /* Color de fondo suave */
+    background-color: #f0f0f0;
+    /* Color de fondo suave */
 }
 
 h1 {
-    color: #0056b3; /* Un azul fuerte para el título principal */
+    color: #0056b3;
+    /* Un azul fuerte para el título principal */
 }
 
 .course-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Espacio entre las tarjetas */
+    gap: 20px;
+    /* Espacio entre las tarjetas */
     padding: 20px 0;
 }
 
@@ -22,19 +25,23 @@ h1 {
     padding: 15px;
     border-radius: 8px;
     background-color: #fff;
-    width: 250px; /* Ancho fijo para cada tarjeta */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    width: 250px;
+    /* Ancho fijo para cada tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para profundidad */
     transition: transform 0.3s ease-in-out;
 }
 
 .course-item:hover {
-    transform: translateY(-5px); /* Efecto al pasar el ratón */
+    transform: translateY(-5px);
+    /* Efecto al pasar el ratón */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .price {
     font-weight: bold;
-    color: #e63946; /* Color para el precio */
+    color: #e63946;
+    /* Color para el precio */
 }
 
 .details-link {
@@ -49,5 +56,39 @@ h1 {
 }
 
 .details-link:hover {
-    background-color: #023e8a; /* Oscurecimiento al pasar el ratón */
+    background-color: #023e8a;
+    /* Oscurecimiento al pasar el ratón */
+}
+
+.testimonials-carousel {
+    padding: 20px 0;
+    background-color: #ffffff;
+    /* Fondo blanco para destacarlo */
+    border-radius: 8px;
+    /* Bordes redondeados para suavizar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra coherente con los cursos */
+    margin: 20px 0;
+    /* Margen para dar espacio alrededor del carrusel */
+}
+
+.testimonial-item {
+    text-align: center;
+    /* Centrar el texto */
+    padding: 10px;
+    color: #333;
+    /* Texto oscuro para contraste */
+    font-size: 16px;
+    /* Tamaño de fuente legible */
+    font-style: italic;
+    /* Estilo itálico para citas */
+}
+
+.testimonial-author {
+    margin-top: 10px;
+    /* Espacio antes del autor */
+    font-weight: bold;
+    /* Autor en negrita */
+    color: #0056b3;
+    /* Azul para mantener coherencia */
 }
