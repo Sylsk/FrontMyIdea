@@ -92,3 +92,25 @@ h1 {
     color: #0056b3;
     /* Azul para mantener coherencia */
 }
+
+.course-item h3 {
+    background-color: transparent;
+    /* Asegúrate de que no hay fondo inicial */
+    color: #333;
+    /* Color normal del texto */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* Transiciones suaves para los cambios */
+    padding: 10px;
+    /* Espaciado para estética */
+    margin: 0;
+    /* Asegúrate de que no hay márgenes extra */
+}
+
+.course-item:hover h3 {
+    background-color: #0056b3;
+    /* Cambia al color azul al pasar el ratón */
+    color: white;
+    /* Cambia el color del texto a blanco para contraste */
+    cursor: pointer;
+    /* Cambia el cursor a pointer para indicar que es clickeable */
+}

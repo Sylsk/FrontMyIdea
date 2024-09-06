@@ -1,5 +1,11 @@
 import imgreact from './img/image.png';
-import imgreact2 from './img/react.png';
+import italia from './img/italia.jpg';
+import mexicana from './img/comida-mexicana.jpg';
+import frances from './img/lenguaje-frances.jpg';
+import japones from './img/japon.jpg';
+import repostería from './img/reoisteria.jpg';
+import español from './img/español.png';
+import fotografía from './img/fotografia.jpg';
 const courses = [
     {
         id: 1,
@@ -23,7 +29,7 @@ const courses = [
         description: 'Introdúcete en la cocina italiana con recetas básicas como pasta, risotto y más.',
         longDescription: 'Sumérgete en el arte de la cocina italiana con nuestro curso práctico. Desde las técnicas básicas hasta la preparación de platos icónicos como la pasta fresca, risottos y tiramisú, aprenderás de chefs expertos que compartirán secretos culinarios y recetas tradicionales. Este curso es perfecto para principiantes y para aquellos que desean profundizar su amor por la gastronomía italiana.',
         type: 'Cocina',
-        img: imgreact2
+        img: italia
     },
     {
         id: 3,
@@ -35,7 +41,7 @@ const courses = [
         description: 'Descubre los sabores auténticos de México, aprendiendo a preparar tacos, salsas y otros platos tradicionales.',
         longDescription: 'Explora la rica y vibrante cocina mexicana en este curso diseñado para foodies y chefs aficionados. Aprenderás a preparar auténticos tacos, ceviches, salsas y moles, mientras descubres los fundamentos de los ingredientes mexicanos y técnicas de cocina. Este curso es una aventura culinaria que te llevará desde el conocimiento básico hasta la capacidad de cocinar impresionantes platillos mexicanos en tu propia cocina.',
         type: 'Cocina',
-        img: imgreact
+        img: mexicana
     },
     {
         id: 4,
@@ -47,7 +53,7 @@ const courses = [
         description: 'Aprende francés básico enfocado en situaciones reales que podrías enfrentar mientras viajas.',
         longDescription: 'Prepárate para tu próximo viaje a Francia con nuestro curso de francés básico para viajeros. Este curso está diseñado para enseñarte expresiones esenciales, preguntas comunes, y vocabulario específico que te ayudará a navegar en situaciones típicas de viaje, desde pedir direcciones hasta hacer reservaciones en restaurantes. Ideal para aquellos que planean visitar países francófonos y desean mejorar su fluidez y confianza al hablar.',
         type: 'Idiomas',
-        img: imgreact
+        img: frances
 
     },
     {
@@ -60,7 +66,7 @@ const courses = [
         description: 'Aprende los fundamentos del japonés, incluyendo escritura básica y frases útiles para el día a día.',
         longDescription: 'Comienza tu viaje hacia el dominio del japonés con este curso que cubre desde el alfabeto hasta conversaciones básicas. Aprenderás la estructura gramatical, vocabulario esencial y frases útiles para la vida diaria, mientras te sumerges en la cultura japonesa a través de ejercicios interactivos y materiales multimedia. Este curso es perfecto para principiantes y aquellos interesados en entender mejor el idioma y la cultura de Japón.',
         type: 'Idiomas',
-        img: imgreact
+        img: japones
     },
     {
         id: 6,
@@ -72,7 +78,7 @@ const courses = [
         description: 'Aprende técnicas de repostería para crear postres innovadores y deliciosos.',
         longDescription: 'Desarrolla tus habilidades en repostería con nuestro curso de repostería creativa. Aprenderás técnicas de decoración, uso de fondant, chocolate, y otros ingredientes para crear obras de arte comestibles. Este curso es ideal para aspirantes a pasteleros y amantes de la cocina dulce que desean llevar sus habilidades al siguiente nivel y sorprender con creaciones únicas y personalizadas.',
         type: 'Cocina',
-        img: imgreact
+        img: repostería
 
     },
     {
@@ -85,7 +91,7 @@ const courses = [
         description: 'Desarrolla tus habilidades lingüísticas en español enfocadas en el ámbito empresarial y de negocios.',
         longDescription: 'Este curso está diseñado para profesionales que necesitan usar el español en contextos empresariales. Cubre desde conversaciones básicas hasta jerga específica de negocios, técnicas de negociación y presentaciones efectivas. Con un enfoque práctico, este curso te preparará para comunicarte de manera efectiva en reuniones de negocios, conferencias y otros contextos profesionales donde el español es esencial.',
         type: 'Idiomas',
-        img: imgreact
+        img: español
     },
     {
         id: 8,
@@ -97,7 +103,7 @@ const courses = [
         description: 'Aprende a capturar los mejores momentos de tus viajes con técnicas de fotografía y edición.',
         longDescription: 'Conviértete en un fotógrafo de viajes experto con este curso que cubre desde los conceptos básicos hasta técnicas avanzadas de fotografía y edición. Aprenderás a componer imágenes impactantes, capturar la esencia de los lugares que visitas, y editar tus fotos para lograr resultados profesionales. Este curso es perfecto para viajeros y amantes de la fotografía que desean mejorar sus habilidades y documentar sus aventuras de manera memorable.',
         type: 'Fotografía',
-        img: imgreact
+        img: fotografía
     }
 ];
 

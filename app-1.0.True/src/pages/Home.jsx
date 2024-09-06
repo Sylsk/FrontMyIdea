@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Home.css';
 import coursesData from './CoursesData';  // Asegúrate de que esta es la ruta correcta
 import FeaturedCoursesCarousel from './Carrusel/FeaturedCoursesCarousel';  // Asegúrate de que las rutas de importación son correctas

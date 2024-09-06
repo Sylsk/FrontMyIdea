@@ -1,6 +1,7 @@
 // src/components/FeaturedCoursesCarousel.js
 import React from 'react';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -18,14 +19,23 @@ function FeaturedCoursesCarousel({ courses }) {
     return (
         <Slider {...settings}>
             {courses.map(course => (
-                <div key={course.id}>
-                    <img src={course.img} alt={course.title} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                    <h3>{course.title}</h3>
-                    <p>${course.price.toFixed(2)}</p>
-                </div>
+                <Link to={`/courses/${course.id}`} key={course.id} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <div>
+                        <img src={course.img} alt={course.title} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                        <h3>{course.title}</h3>
+                        <p>
+                            <span className="rating-stars">
+                                {'★'.repeat(Math.floor(course.rating))}{'☆'.repeat(5 - Math.floor(course.rating))}
+                            </span>
+
+                        </p>
+                        <p>${course.price.toFixed(2)}</p>
+                    </div>
+                </Link>
             ))}
         </Slider>
     );
 }
+
 
 export default FeaturedCoursesCarousel;
